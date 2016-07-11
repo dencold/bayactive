@@ -1,5 +1,10 @@
 ---
-baseurl: http://replace-this-with-your-hugo-site.com/
+baseurl: http://www.bayactive.org
 languageCode: en-us
-title: My New Hugo Site
----
+title: BayActive
+params:
+  cover: /img/cover.jpg
+  logo: /img/logo.svg
+  description: Hikes, bikes & rides in the bay
+  author: dennis
+...

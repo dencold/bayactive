@@ -1,10 +1,55 @@
 ---
-baseurl: http://www.bayactive.org
-languageCode: en-us
-title: BayActive
+baseurl: "http://www.bayactive.org/"            # hostname (and path) to the root, e.g. http://spf13.com/
+languageCode: "en-us"                       # language to use in meta headers
+title: "BayActive"                          # title that appears on main splash page for site
+paginate: 5                                 # number of posts per page that are displayed
+copyright: "All rights reserved - 2016"     # copyright details
+buildDrafts: true                           # include content marked as draft
+canonifyurls: true
+disqusShortname: "YOUR_SHORT_NAME_HERE"     # if using disqus, username is set here
+metaDataFormat: "yaml"                      # toml, yaml, or json
+
+# hugo special directories. generally do *not* need to modify these
+contentdir: "content"
+dataDir: "data"
+defaultLayout: "post"
+layoutdir: "layouts"
+paginatePath: "page"
+publishdir: "public"
+staticdir: "static"
+themesdir: "themes"
+
+# theme/site specific configuration
 params:
-  cover: /img/cover.jpg
-  logo: /img/logo.svg
-  description: Hikes, bikes & rides in the bay
-  author: dennis
-...
+  description: "Hikes, bikes & rides in the bay"   # subtitle that appears under the site's title
+  cover: "/img/cover.jpg"                # main image used for cover splashpage
+  author: "dennis"                          # default site author
+  logo: "/img/logo.svg"
+  googleAnalyticsUserID: "YOUR_GA_ID_HERE"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  RSSLink: "http://feeds.feedburner.com/..."
+  githubName: "dencold"
+  twitterName: "dencold"
+  hideHUGOSupport: true
+  shares:
+    twitter: false
+    facebook: true
+    google-plus: true
+
+author:
+  dennis:
+    name: "Agent Cooper"
+    location: "Washington, D.C."
+    bio: "in search of damned good coffee"
+    thumbnail: "/images/avatar.jpg"
+
+menu:
+  main:
+    - name: "Blog"
+      weight: -120
+      identifier: "blog"
+      url: "/"
+    - name: "About"
+      weight: -110
+      identifier: "about"
+      url: "/about"

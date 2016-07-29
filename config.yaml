@@ -32,9 +32,9 @@ params:
 #  googleAnalyticsUserID: "YOUR_GA_ID_HERE" # TODO: check on this config. I think there is a googleAnalytics in hugo variables that is canonical
 #  RSSLink: "http://feeds.feedburner.com/..." # TODO: how is this different from hugo variable config? Optional RSS-Link, if not provided it defaults to the standard index.xml
 
-  # there are share links at the bottom of every post. all options are listed below.
+  # there are sharing links at the bottom of every post. all options are listed below.
   # set the shares you'd like active to true.
-  shares:
+  sharing:
     twitter: true
     facebook: true
     google-plus: true

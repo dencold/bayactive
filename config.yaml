@@ -25,7 +25,7 @@ params:
   description: "Hikes, bikes & rides in the bay"   # subtitle that appears under the site's title
   cover: "/img/cover.jpg"                   # main image used for cover splashpage
   logo: "/img/logo.svg"                     # site logo. appears in upper-left corner of site
-  author: "dennis"                          # default site author
+#  author: "dennis"                          # default site author
   hideHUGOSupport: true                     # by default, hasper puts a nod to hugo in footer, set to true if you wish to hide
   githubName: ""                            # if set, hasper will display github logo with link above site title
   twitterName: "bayactive"                  # if set, hasper will display twitter logo with link above site title
@@ -43,10 +43,20 @@ params:
 # authors config. use this section to provide full meta-data about the authors on your site
 author:
   dennis:
-    name: "Dennis Coldwell"                 # author's full name
+    id: "dennis"                            # author's id/short name
+    firstName: "Dennis"                     # author's first name
+    lastName: "Coldwell"                    # author's last name
+    displayName: "dennis"                   # author's prefered display name
     location: "Berkeley, CA"                # author's whereabouts
     bio: "trying to leave things better than I found them."  # short bio, appears below author details on post
     thumbnail: "/img/avatar.jpg"            # author's avatar
+  lemond:                                   # you can configure multiple authors
+    id: "lemond"
+    firstName: "Greg"
+    lastName: "LeMond"
+    location: "Lakewood, CA"
+    bio: "It never gets easier, you just go faster."
+    thumbnail: "/img/lemond.jpg"
 
 # menu config. this section defines the area that appears when the user clicks
 # the hamburger menu in upper-right hand corner of the site.
@@ -54,7 +64,7 @@ menu:
   main:
     - name: "Blog"                          # name that appears in the menu list
       weight: -120                          # order it appears more negative == closer to top of list
-      identifier: "blog"                    # TODO: not sure what this is responsible for
+      identifier: "yoidentify"                    # TODO: not sure what this is responsible for
       url: "/"                              # link address to use when user clicks on menu option
     - name: "About"
       weight: -110

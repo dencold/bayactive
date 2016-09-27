@@ -1,6 +1,6 @@
 ---
 date: 2016-06-27T17:09:17-07:00
-draft: true
+draft: false
 title: welcome
 ---
 
